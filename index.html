@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7ed">
+  <meta name="description" content="Order fresh Indian favourites from Tikka Express. Browse the menu, add dishes to your cart, and place a demo order.">
+  <title>Tikka Express – Online Food Ordering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <nav class="bar" aria-label="Main navigation">
+        <a class="logo" href="#" aria-label="Tikka Express home"><span class="logo-mark">✦</span> Tikka <span>Express</span></a>
+        <div class="nav-right"><span class="open-note"><i></i> Open today · 11 AM–11 PM</span>
+          <button class="cartbtn" id="openCart" aria-label="Open cart">🛒 Cart <span id="count">0</span></button>
+        </div>
+      </nav>
+      <div class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">GOOD FOOD. GOOD MOOD.</span>
+          <h1>Your favourite flavours,<br><em>delivered fresh.</em></h1>
+          <p>From smoky tikkas to comforting curries, discover delicious Indian favourites made fresh in our kitchen.</p>
+          <a class="primary-btn hero-cta" href="#menu-section">Explore the menu <span>↓</span></a>
+          <div class="hero-points"><span>✓ Freshly prepared</span><span>✓ Big flavour</span><span>✓ Made with care</span></div>
+        </div>
+        <div class="hero-visual animated-hero">
+          <div class="hero-photo-wrap"><img class="heroimg" src="images/food/hero.jpg" alt="A table full of delicious Indian food"></div>
+          <div class="floating-card"><span class="star">★★★★★</span><strong>Made with love</strong><small>Every dish, every time</small></div>
+          <div class="hero-sticker">100%<br><small>YUMMY</small></div><span class="food-doodle doodle-one" aria-hidden="true">✦</span><span class="food-doodle doodle-two" aria-hidden="true">✿</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main-content">
+    <section class="section-heading" id="menu-section">
+      <div><span class="eyebrow">WHAT ARE YOU CRAVING?</span><h2>Explore our menu</h2><p>Fresh picks for every kind of appetite.</p></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="q" type="search" placeholder="Search dishes..." aria-label="Search dishes"></label>
+    </section>
+    <div class="chips" id="chips" role="group" aria-label="Menu categories"></div>
+    <section class="grid" id="menu" aria-live="polite"></section>
+    <section class="why-us reveal">
+      <div><span class="why-icon">🥘</span><h3>Made fresh</h3><p>Prepared to order with care and flavour.</p></div>
+      <div><span class="why-icon">🌶️</span><h3>Full of flavour</h3><p>Classic Indian favourites with a tasty twist.</p></div>
+      <div><span class="why-icon">💛</span><h3>Made for you</h3><p>Your cravings, your choice, your meal.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="footer-container">
+
+<div class="footer-brand">
+  <a href="#" class="footer-logo">✦ Tikka <span>Express</span></a>
+  <p>Fresh food, happy hearts.</p>
+  <p class="footer-description">
+    Enjoy delicious food, fresh flavours, and a satisfying
+    experience with Tikka Express.
+  </p>
+</div>
+
+<div class="footer-links">
+  <h3>Quick Links</h3>
+  <a href="#">Home</a>
+  <a href="#menu-section">Our Menu</a>
+  <a href="#why-us">Why Choose Us?</a>
+</div>
+
+<div class="footer-links">
+  <h3>Popular Categories</h3>
+  <a href="#menu">Tikka & Kebabs</a>
+  <a href="#menu">Burgers</a>
+  <a href="#menu">Drinks & More</a>
+</div>
+
+<div class="footer-contact">
+  <h3>Our Promise</h3>
+  <p>🍽️ Delicious Food</p>
+  <p>✨ Fresh Flavours</p>
+  <p>❤️ Made with Care</p>
+</div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>
+      &copy; <span id="year"></span> Tikka Express.
+      All rights reserved.
+    </p>
+    <small>Keep Smiling</small>
+  </div>
+</footer>
+
+
+  <div class="scrim" id="scrim"></div>
+  <aside class="drawer" id="drawer" aria-label="Your cart" aria-modal="true" role="dialog" aria-labelledby="cartTitle">
+    <div class="dh"><div><span class="eyebrow">YOUR SELECTION</span><h2 id="cartTitle">Your order <span class="order-count" id="drawerCount">0 items</span></h2></div><button id="closeCart" aria-label="Close cart">×</button></div>
+    <div id="cartBody" class="cart-body"></div>
+  </aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
